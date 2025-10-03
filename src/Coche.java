@@ -1,4 +1,4 @@
-public class Coche extends Vehiculo {
+public class Coche implements Vehiculo {
     private String matricula;
 
     public Coche(String matricula) {
@@ -7,5 +7,16 @@ public class Coche extends Vehiculo {
 
     public String getMatricula() {
         return matricula;
+    }
+
+    public void setMatricula(String matricula) {
+        this.matricula = matricula;
+    }
+
+    @Override
+    public String toString() {
+        return "Coche{" +
+                "matricula='" + matricula + '\'' +
+                "} " + super.toString();
     }
 }

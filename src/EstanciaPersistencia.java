@@ -1,6 +1,6 @@
-import java.time.LocalDateTime;
 
 public interface EstanciaPersistencia {
-    public LocalDateTime entrada();
-    public LocalDateTime salida();
+    public boolean agregarEstancia(Estancia estancia);
+
+    public boolean eliminarEstancia(Estancia estancia);
 }

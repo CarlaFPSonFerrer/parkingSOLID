@@ -1,4 +1,4 @@
-public class Moto extends Vehiculo{
+public class Moto implements Vehiculo{
     private String matricula;
 
     public Moto(String matricula) {

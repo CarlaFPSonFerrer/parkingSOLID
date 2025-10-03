@@ -1,2 +1,2 @@
-public abstract class Vehiculo {
+public interface Vehiculo {
 }
