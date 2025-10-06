@@ -1,4 +1,4 @@
-public class Bicicleta implements Vehiculo{
+public final class Bicicleta implements Vehiculo{
     private String modelo;
 
     public Bicicleta(String modelo) {
@@ -6,4 +6,8 @@ public class Bicicleta implements Vehiculo{
     }
 
 
+    @Override
+    public String nombreTipo() {
+        return "Bicicleta";
+    }
 }

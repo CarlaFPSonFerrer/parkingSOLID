@@ -1,4 +1,4 @@
-public class Moto implements Vehiculo{
+public final class Moto implements Vehiculo{
     private String matricula;
 
     public Moto(String matricula) {
@@ -7,5 +7,10 @@ public class Moto implements Vehiculo{
 
     public String getMatricula() {
         return matricula;
+    }
+
+    @Override
+    public String nombreTipo() {
+        return "Moto";
     }
 }

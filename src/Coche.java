@@ -1,4 +1,4 @@
-public class Coche implements Vehiculo {
+public final class Coche implements Vehiculo {
     private String matricula;
 
     public Coche(String matricula) {
@@ -18,5 +18,10 @@ public class Coche implements Vehiculo {
         return "Coche{" +
                 "matricula='" + matricula + '\'' +
                 "} " + super.toString();
+    }
+
+    @Override
+    public String nombreTipo() {
+        return "Coche";
     }
 }

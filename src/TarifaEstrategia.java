@@ -1,3 +1,5 @@
+import java.time.Duration;
+
 public interface TarifaEstrategia {
-    public double calcularTarifa(long duracion);
+    public double calcularTarifa(Duration duration);
 }
